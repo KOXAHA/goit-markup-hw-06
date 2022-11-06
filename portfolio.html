@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,86 +19,104 @@
 
 </head>
 <body>
-    <header>
-        <div class="head-nav">
-            <nav class="list">
+    <header class="page-header">
+        <div class="container main-nav">
+            <nav class="nav">
                 <a href="./index.html" class="logo-link-header">Web<span class="logo-header">Studio</span></a>
-                <ul class="list list-nav-head">
-                    <li><a class="link list-nav" href="./index.html">Студія</a></li>
-                    <li><a class="link list-nav current" href="./portfolio.html">Портфоліо</a></li>
-                    <li><a class="link list-nav" href="#">Контакти</a></li>
+                <ul class="site-nav list">
+                    <li class="list-nav"><a class="link" href="./index.html">Студія</a></li>
+                    <li class="list-nav"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="list-nav"><a class="link" href="#">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="list contact-header">
-                <li><a class="link list-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link list-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <ul class="cont-nav list">
+                <li class="list-cont"><a class="link list-contact"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="list-cont"><a class="link list-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
     <main>
-        <section class="main-portfolio">
-            <div class="portfolio-container">
+        <section class="main-portfolio section">
+            <div class="container">
                 <h1 class="visually-hidden">Портфоліо</h1>
                 <ul class="filter">
-                    <li> <button class="filter-btn" type="button">Усі</button></li>
-                    <li> <button class="filter-btn" type="button">Веб-сайти</button></li>
-                    <li> <button class="filter-btn" type="button">Додатки</button></li>
-                    <li> <button class="filter-btn" type="button">Дизайн</button></li>
-                    <li> <button class="filter-btn" type="button">Маркетинг</button></li>
+                    <li class="filter-item"> <button class="filter-btn" type="button">Усі</button></li>
+                    <li class="filter-item"> <button class="filter-btn" type="button">Веб-сайти</button></li>
+                    <li class="filter-item"> <button class="filter-btn" type="button">Додатки</button></li>
+                    <li class="filter-item"> <button class="filter-btn" type="button">Дизайн</button></li>
+                    <li class="filter-item"> <button class="filter-btn" type="button">Маркетинг</button></li>
                 </ul>
                 <ul class="list-portfolio">
                     <li class="portf-item">
                         <img src="./images/img1.jpg" alt="Ноутбук з веб-сайтом" width="370" height="294">
-                        <h2 class="title-portf">Технокряк</h2>
-                        <p class="text-portf">Веб-сайт</p>
+                        <div class="card-content">
+                            <h2 class="title-portf">Технокряк</h2>
+                            <p class="text-portf">Веб-сайт</p>
+                        </div>
                     </li>
                     <li class="portf-item">
                         <img src="./images/img2.jpg" alt="Постер" width="370" height="294">
-                        <h2 class="title-portf">Постер New Orlean vs Golden Star</h2>
-                        <p class="text-portf">Дизайн</p>
+                        <div class="card-content">
+                            <h2 class="title-portf">Постер New Orlean vs Golden Star</h2>
+                            <p class="text-portf">Дизайн</p>
+                        </div>
                     </li>
                     <li class="portf-item">
                         <img src="./images/img3.jpg" alt="" width="370" height="294">
-                        <h2 class="title-portf">Ресторан Seafood</h2>
-                        <p class="text-portf">Додаток</p>
+                        <div class="card-content">
+                            <h2 class="title-portf">Ресторан Seafood</h2>
+                            <p class="text-portf">Додаток</p>
+                        </div>
                     </li>
                     <li class="portf-item">
                         <img src="./images/img4.jpg" alt="" width="370" height="294">
-                        <h2 class="title-portf">Проєкт Prime</h2>
-                        <p class="text-portf">Маркетинг</p>
+                        <div class="card-content">
+                            <h2 class="title-portf">Проєкт Prime</h2>
+                            <p class="text-portf">Маркетинг</p>
+                        </div>
                     </li>
                     <li class="portf-item">
                         <img src="./images/img5.jpg" alt="" width="370" height="294">
-                        <h2 class="title-portf">Проєкт Boxes</h2>
-                        <p class="text-portf">Додаток</p>
+                        <div class="card-content">
+                            <h2 class="title-portf">Проєкт Boxes</h2>
+                            <p class="text-portf">Додаток</p>
+                        </div>
                     </li>
                     <li class="portf-item">
                         <img src="./images/img6.jpg" alt="" width="370" height="294">
-                        <h2 class="title-portf">Inspiration has no Borders</h2>
-                        <p class="text-portf">Веб-сайт</p>
+                        <div class="card-content">
+                            <h2 class="title-portf">Inspiration has no Borders</h2>
+                            <p class="text-portf">Веб-сайт</p>
+                        </div>
                     </li>
                     <li class="portf-item">
                         <img src="./images/img7.jpg" alt="" width="370" height="294">
-                        <h2 class="title-portf">Видання Limited Edition</h2>
-                        <p class="text-portf">Дизайн</p>
+                        <div class="card-content">
+                            <h2 class="title-portf">Видання Limited Edition</h2>
+                            <p class="text-portf">Дизайн</p>
+                        </div>
                     </li>
                     <li class="portf-item">
                         <img src="./images/img8.jpg" alt="" width="370" height="294">
-                        <h2 class="title-portf">Проєкт LAB</h2>
-                        <p class="text-portf">Маркетинг</p>
+                        <div class="card-content">
+                            <h2 class="title-portf">Проєкт LAB</h2>
+                            <p class="text-portf">Маркетинг</p>
+                        </div>
                     </li>
                     <li class="portf-item">
                         <img src="./images/img9.jpg" alt="" width="370" height="294">
-                        <h2 class="title-portf">Growing Business</h2>
-                        <p class="text-portf">Додаток</p>
+                        <div class="card-content">
+                            <h2 class="title-portf">Growing Business</h2>
+                            <p class="text-portf">Додаток</p>
+                        </div>
                     </li>
                 </ul>
             </div>
-        
         </section>
     </main>
-    <footer>
-        <div class="address-ft">
+    <footer class="address-ft">
+        <div class="container">
             <a href="./index.html" class="logo-link-footer">Web<span class="logo-footer">Studio</span></a>
             <address class="contact">
                 <ul class="list-address">
