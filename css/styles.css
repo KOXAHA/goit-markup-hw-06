@@ -126,6 +126,7 @@ body {
 
 .icon {
     fill: currentColor;
+    margin-right: 10px;
 }
 
 .link:hover, .link:focus {
