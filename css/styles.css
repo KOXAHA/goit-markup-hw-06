@@ -12,6 +12,8 @@
     --border-header: #ececec;
     --border-cards: #eeeeee;
 
+    --primary-icon-color: #AFB1B8;
+
     --card-set-gap: 30px;
 }
 
@@ -117,6 +119,8 @@ body {
 }
 
 .list-contact {
+    display: flex;
+    justify-content: center;
     color: var(--primary-text-color);
 }
 
@@ -124,24 +128,27 @@ body {
     color: var(--logo-color);
 }
 
-.icon {
+.icon-cont {
+    display: inline-flex;
     fill: currentColor;
+    width: 16px;
+    height: 16px;
     margin-right: 10px;
+
+}
+
+.icon-cont:hover, .icon-cont:focus {
+    fill: var(--logo-color);
 }
 
 .link:hover, .link:focus {
     color: var(--logo-color);
 }
 
-.icon:hover,
-.icon:focus {
-    color: var(--logo-color);
-}
-
 /* hero */
 
 .hero {
-    width: 100%;
+    /* width: 100%; */
     background-color: var(--primary-background-color);
     margin: 0;
     /* padding: 200px 0; */
@@ -218,6 +225,33 @@ body {
 
 .list-ftrs-text:last-child {
     margin-right: 0;
+}
+
+.list-ftrs-text::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-color: var(--secondary-background-color);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
 }
 
 .title-ftrs {
@@ -299,6 +333,78 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 16px;
+}
+
+.networks {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.list-network {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-network:hover,
+.list-network:focus {
+    background-color: var(--logo-color);
+    border-radius: 50%;
+}
+
+.list-network:not(:last-child) {
+    margin-right: 10px;
+}
+
+.icon {
+    fill: var(--primary-icon-color);
+}
+
+.list-network:hover .icon,
+.list-network:focus .icon {
+    fill: var(--secodary-text-color);
+}
+
+/* постійні клієнти */
+
+.company {
+    display: inline-flex;
+}
+
+.list-company {
+    width: 170px;
+    height: 92px;
+    outline: 1px solid #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 1%;
+}
+
+.list-company:not(:last-child) {
+    margin-right: var(--card-set-gap);
+}
+
+.icon-company {
+    width: 160px;
+    height: 60px;
+    align-items: center;
+    fill: var(--primary-icon-color);
+}
+
+.list-company:hover,
+.list-company:focus {
+    outline-color: var(--logo-color);
+}
+
+.list-company:hover .icon-company,
+.list-company:focus .icon-company {
+    fill: var(--logo-color);
 }
 
 /* фільтр */
@@ -392,8 +498,18 @@ body {
     width: 100%;
     left: 0px;
     background-color: var(--primary-background-color);
-    padding-top: 60px;
+    /* padding-top: 60px; */
     padding-bottom: 60px;
+}
+
+.cont-footer {
+    display: flex;
+}
+
+.cont-address {
+    margin-top: 60px;
+    margin-right: 70px;
+    width: 231px;
 }
 
 .contact {
@@ -425,4 +541,47 @@ body {
 .link-address:hover, .link-address:focus,
 .link-address-contact:hover, .link-address-contact:focus {
     color: var(--logo-color);
+}
+
+.cont-friend {
+    margin-top: 72px;
+}
+
+.friend {
+    text-transform: uppercase;
+    color: var(--secodary-text-color);
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 20px;
+}
+
+.list-cont-net {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-cont-net:not(:last-child) {
+    margin-right: 10px;
+}
+
+.list-cont-net:hover {
+    background-color: var(--logo-color);
+}
+
+.list-net {
+    display: inline;
+    padding: 0;
+    align-items: center;
+}
+
+.icon-cont-net {
+    width: 20px;
+    height: 20px;
+    fill: var(--secodary-text-color);
 }
