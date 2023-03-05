@@ -137,12 +137,13 @@ body {
 
 }
 
-.icon-cont:hover, .icon-cont:focus {
-    fill: var(--logo-color);
-}
-
 .link:hover, .link:focus {
     color: var(--logo-color);
+}
+
+.link:hover .icon-cont,
+.link:focus .icon-cont {
+    fill: var(--logo-color);
 }
 
 /* hero */
