@@ -43,7 +43,16 @@
         <section class="hero overlay">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-btn" type="button">Замовити послугу</button>
+                <button data-modal-open class="hero-btn" type="button">Замовити послугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button data-modal-close class="close-btn" type="button">
+                            <svg class="close">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>                           
         </section>
         <section class="section">
@@ -51,18 +60,30 @@
                 <h2 class="visually-hidden">Особливості</h2>
                 <ul class="list-ftrs">
                     <li class="list-ftrs-text icon-antenna">
+                         <svg class="icon-decor" widht="70" height="70">
+                            <use href="./images/icons.svg#icon-antenna"></use>
+                        </svg>
                         <h3 class="title-ftrs">Увага до деталей</h3>
                         <p class="text-ftrs">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
                     <li class="list-ftrs-text icon-clock">
+                         <svg class="icon-decor">
+                            <use href="./images/icons.svg#icon-clock"></use>
+                        </svg>
                         <h3 class="title-ftrs">Пунктуальність</h3>
                         <p class="text-ftrs">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
                     <li class="list-ftrs-text icon-diagram">
+                         <svg class="icon-decor">
+                            <use href="./images/icons.svg#icon-diagram"></use>
+                        </svg>
                         <h3 class="title-ftrs">Планування</h3>
                         <p class="text-ftrs">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li class="list-ftrs-text icon-astronaut">
+                         <svg class="icon-decor">
+                            <use href="./images/icons.svg#icon-astronaut"></use>
+                        </svg>
                         <h3 class="title-ftrs">Сучасні технології</h3>
                         <p class="text-ftrs">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -73,11 +94,18 @@
             <div class="container">
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="list portf">
-                    <li class="portf-img"><img src="./images/box1.jpg" alt="Програміст працює" width="370" height="294"></li>
-                    <li class="portf-img"><img src="./images/box2.jpg" alt="UI-дизайнер розробляє додатки для смартфонів" width="370"
-                            height="294"></li>
-                    <li class="portf-img"><img src="./images/box3.jpg" alt="Веб-дизайнер вибирає колір на графічному планшеті"
-                            width="370" height="294"></li>
+                    <li class="portf-img">
+                        <img src="./images/box1.jpg" alt="Програміст працює" width="370" height="294">
+                        <p class="portf-img-title">десктопні додатки</p>
+                    </li>
+                    <li class="portf-img">
+                        <img src="./images/box2.jpg" alt="UI-дизайнер розробляє додатки для смартфонів" width="370" height="294">
+                        <p class="portf-img-title">мобільні додатки</p>
+                    </li>
+                    <li class="portf-img">
+                        <img src="./images/box3.jpg" alt="Веб-дизайнер вибирає колір на графічному планшеті" width="370" height="294">
+                        <p class="portf-img-title">дизайнерські рішення</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -242,37 +270,37 @@
                 <ul class="list company">
                     <li class="list-company">
                         <a class="link-company" href="#"><svg class="icon-company">
-                                <use href="./images/icons.svg#icon-group"></use>
+                            <use href="./images/icons.svg#icon-company1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="list-company">
                         <a class="link-company" href="#"><svg class="icon-company">
-                                <use href="./images/icons.svg#icon-group1"></use>
+                            <use href="./images/icons.svg#icon-company2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="list-company">
                         <a class="link-company" href="#"><svg class="icon-company">
-                                <use href="./images/icons.svg#icon-Object"></use>
+                            <use href="./images/icons.svg#icon-company3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="list-company">
                         <a class="link-company" href="#"><svg class="icon-company">
-                                <use href="./images/icons.svg#icon-group2"></use>
+                            <use href="./images/icons.svg#icon-company4"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="list-company">
                         <a class="link-company" href="#"><svg class="icon-company">
-                                <use href="./images/icons.svg#icon-group3"></use>
+                            <use href="./images/icons.svg#icon-company5"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="list-company">
                         <a class="link-company" href="#"><svg class="icon-company">
-                                <use href="./images/icons.svg#icon-group5"></use>
+                            <use href="./images/icons.svg#icon-company6"></use>
                             </svg>
                         </a>
                     </li>
@@ -329,5 +357,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
