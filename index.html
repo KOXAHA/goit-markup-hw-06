@@ -25,7 +25,7 @@
                 <ul class="site-nav list">
                     <li class="list-nav"><a class="link current" href="./index.html">Студія</a></li>
                     <li class="list-nav"><a class="link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="list-nav"><a class="link" href="#">Контакти</a></li>
+                    <li class="list-nav"><a class="link" href="#contact">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="cont-nav list">
@@ -51,6 +51,41 @@
                                 <use href="./images/icons.svg#icon-close"></use>
                             </svg>
                         </button>
+                        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+                        <form class="form" action="#">
+                            <div class="form-group">
+                                <label for="name">Ім'я</label>
+                                <input class="form-input" type="text" name="name" id="name">
+                                <svg class="modal-icon">
+                                    <use href="./images/icons.svg#icon-person"></use>
+                                </svg>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input class="form-input" type="tel" name="phone" id="phone">
+                                <svg class="modal-icon">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Пошта</label>
+                                <input class="form-input" type="email" name="email" id="email">
+                                <svg class="modal-icon">
+                                    <use href="./images/icons.svg#icon-email"></use>
+                                </svg>
+                            </div>
+                            <div class="form-group-comment">
+                                <label for="comment">Коментар</label>
+                                <textarea class="comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                            </div>
+                            <label class="form-policity">
+                                <input class="checkbox" type="checkbox" name="policity" id="policity">
+                                <span class="icon-checkbox"></span>
+                                Погоджуюся з розсилкою та приймаю
+                                <a class="link-checkbox" href="#">Умови договору</a>
+                            </label>
+                            <button class="form-btn" type="submit">Відправити</button>
+                        </form>
                     </div>
                 </div>
             </div>                           
@@ -308,7 +343,7 @@
             </div>
         </section>
     </main>
-    <footer class="address-ft">
+    <footer id="contact" class="address-ft">
         <div class="container cont-footer">
             <div class="cont-address">
                 <a href="./index.html" class="logo-link-footer">Web<span class="logo-footer">Studio</span></a>
@@ -322,7 +357,7 @@
                     </ul>
                 </address>
             </div>
-            <div>
+            <div class="social">
                 <p class="friend">приєднуйтесь</p>
                 <ul class="cont-nav list">
                     <li class="list-cont-net">
@@ -354,6 +389,13 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div>
+                <p class="friend">Підпишіться на розсилку</p>
+                <div class="subscription">
+                    <input class="input-footer" type="email" name="email" placeholder="E-mail">
+                    <button class="footer-btn" type="submit">Підписатися</button>
+                </div>
             </div>
         </div>
     </footer>
