@@ -907,6 +907,7 @@ textarea {
     line-height: 1.9;
     letter-spacing: 0.06em;
     color: var(--secodary-text-color);
+    cursor: pointer;
 }
 
 .footer-btn::after {
